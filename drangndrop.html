@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #division {
+            width: 1000px;
+            height: 1000px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="division" ondragover="allowdrop(event)" ondrop="drop(event)"></div>
+    <img id="image" src="C:\Users\potha\Downloads\mahadev.jpg" alt="drag and drop" draggable="true" ondragstart="drag(event)" />
+
+    <script>
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+
+        function allowdrop(event) {
+            event.preventDefault(); // 'P' in 'PreventDefault' should be lowercase
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("text");
+            event.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</body>
+</html>

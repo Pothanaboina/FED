@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<svg>
+  <circle cx="50" cy="50" r="30" stroke="green" stroke-width="4px" fill="yellow" id="color" onclick="getcolor()"/>
+</svg>
+<svg>
+  <ellipse cx="100" cy="100" rx="150" ry="150" fill="pink"/>
+</svg>
+<svg>
+  <rect height="100" width="100" id="rect" onclick="getsize()" fill="blue"/>  
+</svg>
+<script>
+function getcolor(){
+  var clr = document.getElementById("color");
+  alert(clr.getAttribute("fill"));
+}
+
+function getsize(){
+  var r = document.getElementById("rect");
+  var x = parseFloat(r.getAttribute("height"));
+  var y = parseFloat(r.getAttribute("width"));
+  alert(x + " " + y);
+}
+</script>
+</body>
+</html>

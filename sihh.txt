@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url("https://itchronicles.com/wp-content/uploads/2020/10/speech-to-text-1024x683.jpg");
+            background-size: 1400px 800px;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        
+        h2 {
+            color: white;
+            top: 200px;
+            left: 200px;
+            position: absolute;
+        }
+        
+        .video {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .submit {
+            width: 100px;
+            height: 50px;
+            top: 60%;
+            left: 15%;
+            position: absolute;
+        }
+        
+        select {
+            width: 70px;
+            height: 30px;
+            top: 45%;
+            left: 15%;
+            position: absolute;
+        }
+        
+        .hai {
+            position: absolute;
+            top: 170px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>English to Regional Language Dubbing</h1>
+    <form action="/action_page.php" class="hai">
+        <input type="file" id="myFile" name="filename" accept=".mp3, .mp4">
+    </form><br>
+    <form>
+        <label for="Language"><h2>Choose a Language:</h2></label>
+        <select id="Language" name="Language">
+            <option value="Hindi">Hindi</option>
+            <option value="Malayalam">Malayalam</option>
+            <option value="Tamil">Tamil</option>
+        </select>
+    </form><br><br>
+    <button class="submit">Convert</button>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <img src="C:\Users\potha\Downloads\nature.jpg" id="img" />
+    <button onclick="draw()">getImage</button>
+    <canvas height="600" width="600" style="border:5px solid" id="canvas"></canvas>
+    <script>
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+      ctx.lineTo(50, 50);
+      ctx.moveTo(25, 25);
+      ctx.stroke();
+      ctx.fillText("hello", 70, 70);
+      ctx.fillRect(150, 150, 150, 150);
+      function draw() {
+        var img = document.getElementById("img");
+        ctx.drawImage(img, 150, 150);
+      }
+    </script>
+  </body>
+</html>

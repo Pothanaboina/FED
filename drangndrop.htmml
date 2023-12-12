@@ -1,0 +1,4 @@
+<html>
+<body>
+<div id="division" style ="width:500px; height:500px; border:1px solid; ondragover="allowdrop(event)" ondrop="drop(event)">
+ 

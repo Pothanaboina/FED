@@ -1,0 +1,22 @@
+<html>
+<body>
+<progress value=50 max=100 id="progress"/>
+<p id="progresstext">task completed......50%></p>
+<button onclick="updateprogress()">update progress</button>
+<script>
+function updateprogress(){
+var pr=document.getElementById("progress");
+var current =pr.value;
+if(current<pr.max)
+
+ {
+   pr.value=current+10;
+   val per =(pr.value/pr.max)*100;
+   prtext.textContent="task completed..."+per+"%";
+   }
+   else{
+   pretext.textContent="taskcompleted";
+   }
+   </script>
+   </body>
+   </html>
